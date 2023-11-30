@@ -14,7 +14,8 @@ public class FormTest {
 
     @Test
     void shouldCompleteForm() throws InstantiationException {
-        open("http://localhost:9999");
+        open("http://0.0.0.0:9999");
+      
 
         $("[data-test-id=\"name\"] input").setValue("Васильев Василий");
         $("[data-test-id=\"phone\"] input").setValue("+79270000000");
